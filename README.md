@@ -17,14 +17,14 @@
 
  * PHP 7.4 | 8.0+
  * PDO PHP Extension
- * Suport MySQL 5.5.3+ **or** MariaDB 5.5.23+ **or** PostgreSQL 9.5.10+ **or** SQLite 3.14.1+ **or** [other SQL databases](Database)
+ * Suport MySQL 5.5.3+ **or** MariaDB 5.5.23+ **or** PostgreSQL 9.5.10+ **or** SQLite 3.14.1+ ...
 
 ## Installation
 
 
 
 ```shell
-composer create-project "hezecom/slim-starter 1.0" [my-app]
+composer create-project "hezecom/slim-starter v1.0" [my-app]
 ```
 **`Database (Required for auth to work)`**
 * Create a database or use existing database to import/copy to your SQL console to create required tables for the authentication.
@@ -177,7 +177,6 @@ class AuthController extends Controller
 
 reference slim official documents - [Slim Framework](http://www.slimframework.com/docs/)
 
-## Look Feel
 
 
 ## Directory Structure
