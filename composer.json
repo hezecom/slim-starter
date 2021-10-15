@@ -1,5 +1,5 @@
 {
-    "name": "hezecom/slimstarter",
+    "name": "hezecom/slim-starter",
     "description": "Slim Framework 4 Starter App",
     "type": "project",
     "keywords": ["slim", "slim 4", "skeleton", "authentication","template", "orm","hezecom"],

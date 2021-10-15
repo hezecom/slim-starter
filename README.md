@@ -26,6 +26,10 @@
 ```shell
 composer create-project "hezecom/slim-starter 1.0" [my-app]
 ```
+**`Database (Required for auth to work)`**
+* Create a database or use existing database to import/copy to your SQL console to create required tables for the authentication.
+* Dasbase option (MySQL, SQLite or PostgreSQL)
+* Database file is located at **/`database`**
 
 ## .env
 
