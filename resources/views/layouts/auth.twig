@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}{% endblock %} | Hezecom Framework</title>
+	{% include 'partials/css.twig' %}
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+		body {
+			background-color: #ffffff;
+			font-family: "Poppins", sans-serif;
+			font-weight: 300
+		}
+
+		.height {
+			height: 100vh
+		}
+
+		.card {
+			border: solid 1px #D4D4D4;
+			padding: 20px;
+			background-color: #F1F1F1;
+			color: #2a2a2a;
+		}
+
+		.circle {
+			height: 20px;
+			width: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #5855e7;
+			color: #000000;
+			font-size: 10px;
+			border-radius: 50%
+		}
+
+		.form-input {
+			position: relative;
+			margin-bottom: 10px;
+			margin-top: 10px
+		}
+
+		.form-input i {
+			position: absolute;
+			font-size: 18px;
+			top: 15px;
+			left: 10px
+		}
+
+		.form-control {
+			height: 50px;
+			background-color: #ffffff;
+			text-indent: 24px;
+			font-size: 15px
+		}
+
+		.form-control:focus {
+			background-color: #ffffff;
+			box-shadow: none;
+			color: #000000;
+			border-color: #4f63e7
+		}
+
+		.form-check-label {
+			margin-top: 2px;
+			font-size: 14px
+		}
+
+		.signup {
+			height: 50px;
+			font-size: 14px
+		}
+
+		.social {
+			height: 50px;
+			width: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid #2a2a2a;
+			border-radius: 50%;
+			margin-right: 10px;
+			cursor: pointer
+		}
+		.social:hover {
+			background-color: #0d6efd;
+			border-color: #0d6efd
+		}
+		.hel-block{
+			color: red;
+			font-size: 14px;
+		}
+		.has-error{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<div class="container mt-5 mb-5">
+	<div class="row d-flex align-items-center justify-content-center">
+		<div class="col-md-6">
+			{% include 'partials/flash.twig' %}
+		</div>
+	</div>
+	{% block content %}{% endblock %}
+</div>
+<footer style="text-align: center; font-size: 12px">
+	{% block footer %}
+		<a href="{{ route('index') }}">Home</a>
+	{% endblock %}
+</footer>
+{% include 'partials/js.twig' %}
+</body>
+</html>

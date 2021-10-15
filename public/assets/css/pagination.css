@@ -1,0 +1,66 @@
+/*=====================
+PAGINATION THEME
+======================*/
+ul.hezpaging{
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow:hidden;
+    font:12px 'Tahoma';
+    list-style-type:none;
+}
+
+ul.hezpaging li.details{
+    padding:3px 10px 3px 10px;
+    font-size:14px;
+}
+
+ul.hezpaging li.dot{padding: 3px 0;}
+
+ul.hezpaging li{
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+ul.hezpaging li:first-child{
+    margin-left:0;
+}
+
+ul.hezpaging li a{
+    color:black;
+    display:block;
+    text-decoration:none;
+    padding:3px 10px 3px 10px;
+}
+
+ul.hezpaging li a img{
+    border:none;
+}
+ul.hezpaging li.details{
+    color:#888888;
+}
+
+ul.hezpaging li a
+{
+    color:#FFFFFF;
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+}
+
+ul.hezpaging li a
+{
+    color:#474747;
+    border:solid 1px #B6B6B6;
+    padding:5px 12px 5px 12px;
+    background:#E6E6E6;
+    background:-moz-linear-gradient(top,#FFFFFF 1px,#F3F3F3 1px,#E6E6E6);
+    background:-webkit-gradient(linear,0 0,0 100%,color-stop(0.02,#FFFFFF),color-stop(0.02,#F3F3F3),color-stop(1,#E6E6E6));
+}
+
+ul.hezpaging li a:hover,
+ul.hezpaging li a.current
+{
+    background:#FFFFFF;
+}
