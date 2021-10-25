@@ -18,7 +18,7 @@ class HomeController extends Controller
 
     public function dashboard(Request $request, Response $response)
     {
-        $users = User::get();
+        $users = User::limit(10)->get();
         return view($response,'admin/dashboard/index.twig', compact('users'));
     }
 }
